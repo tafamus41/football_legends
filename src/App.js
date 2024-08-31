@@ -1,3 +1,4 @@
+import Container from "react-bootstrap/Container";
 import Header from "./components/header/Header";
 import LegendsContainer from "./components/legends/LegendsContainer";
 
@@ -5,10 +6,10 @@ import LegendsContainer from "./components/legends/LegendsContainer";
 
 function App() {
   return (
-    <div>
+    <Container>
       <Header/>
       <LegendsContainer/>
-    </div>
+    </Container>
   );
 }
 
