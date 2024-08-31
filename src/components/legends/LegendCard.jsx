@@ -1,6 +1,6 @@
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import { useState } from "react";
+import React,{ useState } from "react";
 
 const LegendCard = ({ legend }) => {
   const [image, setImage] = useState(true);
@@ -8,7 +8,7 @@ const LegendCard = ({ legend }) => {
     <Col xs={12} sd={8} md={6} lg={4} xl={3}>
       <Card onClick={() => setImage(!image)} className="legend-card">
         {image ? (
-          <Card.Img variant="top" src={legend.img} />
+          <Card.Img variant="top" src={legend.img} title={legend.name}/>
         ) : (
           <Card.Body>
             <Card.Header>{legend.name}</Card.Header>
