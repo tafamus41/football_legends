@@ -6,7 +6,7 @@ import LegendCard from "./LegendCard";
 import React,{useState} from "react"
 
 const LegendsContainer = () => {
-  // console.log(data);
+  
   const [search,setSearch]=useState("");
 
   return (
