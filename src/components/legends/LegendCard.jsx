@@ -7,14 +7,12 @@ const LegendCard = ({ legend }) => {
       <Card>
         <Card.Img variant="top" src={legend.img} />
         <Card.Body>
-          <Card.Title>{legend.name}</Card.Title>
-          <Card.Text>
+          <Card.Header>{legend.name}</Card.Header>
+          <ul>
             {legend.statistics.map((item, index) => (
-              <ul>
-                <li key={index}>{item}</li>
-              </ul>
+              <li key={index}>{item}</li>
             ))}
-          </Card.Text>
+          </ul>
           <Card.Footer className="text-muted">
             Career Years: {legend.official_career}
           </Card.Footer>
