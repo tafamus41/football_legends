@@ -10,7 +10,7 @@ const LegendCard = ({ legend }) => {
         {image ? (
           <Card.Img variant="top" src={legend.img} title={legend.name}/>
         ) : (
-          <Card.Body>
+          <>
             <Card.Header>{legend.name}</Card.Header>
             <ul className="m-auto ps-0">
               {legend.statistics.map((item, index) => (
@@ -22,7 +22,7 @@ const LegendCard = ({ legend }) => {
             <Card.Footer className="text-muted">
               Career Years: {legend.official_career}
             </Card.Footer>
-          </Card.Body>
+          </>
         )}
       </Card>
     </Col>

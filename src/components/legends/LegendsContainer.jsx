@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import LegendCard from "./LegendCard";
 
 const LegendsContainer = () => {
-  console.log(data);
+  // console.log(data);
   return (
     <Container>
       <Row>
