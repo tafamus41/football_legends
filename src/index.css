@@ -12,3 +12,6 @@ body {
   background-attachment: fixed;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.legend-card{
+  height: 350px;
+}
