@@ -13,7 +13,7 @@ const LegendsContainer = () => {
     <>
       <Form.Control onChange={(e)=>setSearch(e.target.value)} type="search" className="w-50 mx-auto my-2" placeholder="Search legends..."/>
       <Container className="p-3 rounded-4 card-container my-3">
-        <Row>
+        <Row className="justify-content-center g-3">
           {data.filter((legend)=>legend.name.toLowerCase().includes(search.trim().toLowerCase())).map((legend) => (
             <LegendCard key={legend.id} legend={legend} />
           ))}
